@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hemn Abdulaziz</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff8a3d">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0b1020; color: #e8ebf5; line-height: 1.6; }
+  nav { position: fixed; top: 0; width: 100%; background: rgba(11,16,32,0.9); backdrop-filter: blur(8px); padding: 16px 8%; display: flex; justify-content: space-between; align-items: center; z-index: 10; }
+  nav .logo { font-weight: 700; color: #ff8a3d; font-size: 1.2rem; }
+  nav a { color: #e8ebf5; text-decoration: none; margin-left: 24px; font-size: 0.95rem; }
+  nav a:hover { color: #2de2e6; }
+  section { padding: 100px 8% 60px; max-width: 1100px; margin: 0 auto; }
+  h2 { font-size: 2rem; margin-bottom: 24px; color: #a66bff; }
+  #ana { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+  #ana h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); background: linear-gradient(90deg, #ff8a3d, #a66bff, #2de2e6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  #ana p { font-size: 1.2rem; margin: 16px 0 32px; color: #b8bfd8; }
+  .btn { display: inline-block; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: 600; margin-right: 12px; transition: transform 0.2s; }
+  .btn:hover { transform: translateY(-3px); }
+  .btn.turuncu { background: #ff8a3d; color: #0b1020; }
+  .btn.mor { border: 2px solid #a66bff; color: #a66bff; }
+  .kart { background: #141a33; border: 1px solid #232b4d; border-radius: 16px; padding: 24px; margin-bottom: 20px; }
+  .kart h3 { color: #2de2e6; margin-bottom: 8px; }
+  .kartlar { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  form { display: grid; gap: 14px; max-width: 520px; }
+  input, textarea { padding: 12px 14px; border-radius: 10px; border: 1px solid #232b4d; background: #141a33; color: #e8ebf5; font-size: 1rem; font-family: inherit; }
+  input:focus, textarea:focus { outline: 2px solid #a66bff; }
+  button { padding: 12px; border: none; border-radius: 30px; background: #2de2e6; color: #0b1020; font-weight: 700; font-size: 1rem; cursor: pointer; }
+  footer { text-align: center; padding: 30px; color: #6f7799; font-size: 0.9rem; }
+  @media (max-width: 600px) { nav a { margin-left: 12px; font-size: 0.85rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Hemn</div>
+  <div>
+    <a href="#ana">Ana Sayfa</a>
+    <a href="#hakkimda">Hakkımda</a>
+    <a href="#egitim">Eğitim</a>
+    <a href="#islerim">İşlerim</a>
+    <a href="#iletisim">İletişim</a>
+  </div>
+</nav>
+
+<section id="ana">
+  <h1>Hemn Abdulaziz</h1>
+  <p>Programcı · Network ve Website Uzmanı</p>
+  <div>
+    <a class="btn turuncu" href="#islerim">İşlerime Bak</a>
+    <a class="btn mor" href="#iletisim">İletişime Geç</a>
+  </div>
+</section>
+
+<section id="hakkimda">
+  <h2>Hakkımda</h2>
+  <div class="kart">
+    <p>Merhaba, ben Hemn. Institute of Computer, Duhok'ta Programlama bölümünü bitirdim ve diploma aldım. Network kurulumu ve yönetimi ile website hazırlama ve yayınlama konusunda bilgim var. Yeni şeyler öğrenmeyi ve öğrendiklerimi gerçek projelere dönüştürmeyi seviyorum.</p>
+    <p style="margin-top:12px;color:#ff8a3d;">Güçlü yanlarım: programlama, network, website tasarımı ve yayınlama, problem çözme</p>
+  </div>
+</section>
+
+<section id="egitim">
+  <h2>Eğitim</h2>
+  <div class="kart">
+    <h3>Institute of Computer, Duhok</h3>
+    <p>Programlama Diploması</p>
+    <p style="color:#6f7799;">2021 - 2026</p>
+  </div>
+</section>
+
+<section id="islerim">
+  <h2>İşlerim</h2>
+  <div class="kartlar">
+    <div class="kart">
+      <h3>Website Projesi</h3>
+      <p>Sıfırdan tasarlayıp hazırladığım ve yayınladığım bir website. Açıklama buraya eklenecek.</p>
+    </div>
+    <div class="kart">
+      <h3>Network Projesi</h3>
+[24.11.2026 21:15] 𝑴𝑹 𝑲𝑶𝑪𝑯𝑬𝑹: <p>Bir ağın kurulumu, ayarlanması ve yönetimi. Açıklama buraya eklenecek.</p>
+    </div>
+    <div class="kart">
+      <h3>Yeni Proje</h3>
+      <p>İleride ekleyeceğin bir iş için boş kart.</p>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim">
+  <h2>İletişim</h2>
+  <form action="https://formspree.io/f/xgakrppd" method="POST">
+    <input type="text" name="name" placeholder="Adın" required>
+    <input type="email" name="email" placeholder="E-posta adresin" required>
+    <textarea name="message" rows="5" placeholder="Mesajın" required></textarea>
+    <button type="submit">Gönder</button>
+  </form>
+</section>
+
+<footer>© 2026 Hemn Abdulaziz</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+
+</body>
+</html>
